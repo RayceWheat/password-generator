@@ -11,7 +11,6 @@ May include uppercase
 May include numeric
 May include special characters
 
-
 ## Bulit with
 HTML
 CSS 
@@ -22,7 +21,7 @@ Javascript
 https://raycewheat.github.io/password-generator/
 
 ## How the website should look
-
+![WebsitePhoto](https://raw.githubusercontent.com/RayceWheat/password-generator/main/assets/images/password-website-photo.png)
 
 ## Contribution
 Made by Rayce Wheat
