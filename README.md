@@ -2,13 +2,13 @@
 ***
 ## Purpose 
 Create an application that can be used to generate a random password 
-Based on the following criteria:
-Be random
-Length: 8-128
+based on the following criteria:
+Be random,
+Length: 8-128,
 Must include at least 1 of the following:
-May include lowercase
-May include uppercase
-May include numeric
+May include lowercase,
+May include uppercase,
+May include numeric,
 May include special characters
 
 ## Bulit with
