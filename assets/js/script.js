@@ -1,5 +1,4 @@
-// Assignment code here
-
+// the code which generates the password dispalys it on screen after the button is clicked
 function myCode() {
 // array with all lower case letters 
 var lowCase = 'abcdefghijklmnopqrstuvwxyz'
@@ -16,12 +15,15 @@ var keySet = ""
 // Empty array which will hold the password string 
 var passWord = ""
 
+// Go through the various password conditons and then add them to the key
 var passwordLength = Number(window.prompt("Desired password length: No less than 8 and no more than 128", "8"));
   
+  // get the password length
   if (passwordLength < 8 || passwordLength > 128) {
     window.alert("Password must be between 8 and 128 characters");
   }
 
+  // include lower case letters or not 
 var lowerCase = window.confirm("Include lower case letters?") 
 
   if (lowerCase == true) {
@@ -31,6 +33,7 @@ var lowerCase = window.confirm("Include lower case letters?")
     window.alert("Lower case letters will NOT be included");
   }
 
+  // include upper case letters or not
 var upperCase = window.confirm("Inlcude upper case letters?")
 
   if (upperCase == true) {
@@ -40,6 +43,7 @@ var upperCase = window.confirm("Inlcude upper case letters?")
     window.alert("Upper case letters will NOT be included")
   }
 
+  // include numeric character or not
 var numeric = window.confirm("Include numeric characters?")
 
   if (numeric == true) {
@@ -49,6 +53,7 @@ var numeric = window.confirm("Include numeric characters?")
     window.alert("Numeric characters will NOT be included")
   }
 
+  // include special characters or not
 var specialChar = window.confirm("Include special characters?") 
 
   if (specialChar == true) {
@@ -86,31 +91,8 @@ passwordText.value = passWord;
 
 }
 
-// -> Create a series of prompts for passward critea 
-// -> Length at least 8 characters no more than 128
-// -> lowercase, uppercase, numeric, and/or special characters
-// -> my input should be validated and at least one character type must be selected
-// -> After prompts are answered a password is generated
-// -> The password is then disaplyed in alert or written 
-
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
-// commented out inital code that was not used
-// Write password to the #password input
-//function writePassword() {
-  //var password = generatePassword();
-  //var passwordText = document.querySelector("#password");
-
-  //passwordText.value = password;
-
-//}
-
-// Add event listener to generate button
-//generateBtn.addEventListener("click", writePassword);
-
-
-// on click run my code
-// after code show password
-
+// add a listerner 
 generateBtn.addEventListener("click", myCode)
