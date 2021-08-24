@@ -27,7 +27,6 @@ var lowerCase = window.confirm("Include lower case letters?")
   if (lowerCase == true) {
     window.alert("Lower case letters will be included");
     keySet = keySet + lowCase;
-    console.log(keySet)
   } else {
     window.alert("Lower case letters will NOT be included");
   }
@@ -68,8 +67,6 @@ if (!lowerCase && !upperCase && !specialChar && !numeric) {
 
 keySetLen = keySet.length
 
-console.log(keySetLen)
-
 // Random number function 
 var randomNumber = function(min, max) {
   var value = Math.floor(Math.random() * (max - min + 1)) + min;
@@ -99,6 +96,7 @@ passwordText.value = passWord;
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
+// commented out inital code that was not used
 // Write password to the #password input
 //function writePassword() {
   //var password = generatePassword();
